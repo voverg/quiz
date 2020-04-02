@@ -1,20 +1,74 @@
 const questionList = [
     {
-        question: 'What is 2 + 2',
+        question: 'Почему коронавирус так называется?',
         answers: [
-            {text: '3', correct: false},
-            {text: '4', correct: true},
-            {text: '7', correct: false},
-            {text: '10', correct: false}
+            {text: 'Потому что это королевский вирус семейства Коронагулис', correct: false},
+            {text: 'Поверхность вируса покрыта ворсинками, напоминающими корону', correct: true},
+            {text: 'Просто так назвали, без определённого смысла', correct: false},
+            {text: 'Коронавирус расшифровывается как - кожно-респираторный онкологический вирус', correct: false}
         ]
     },
     {
-        question: 'What is your name?',
+        question: 'Как передаётся коронавирус?',
         answers: [
-            {text: 'Cat', correct: false},
-            {text: 'Dog', correct: false},
-            {text: 'Vova', correct: true},
-            {text: 'Rabbit', correct: false}
+            {text: 'Половым путём', correct: false},
+            {text: 'Через кровь, порезы ссадины', correct: false},
+            {text: 'Через не свежие продукты', correct: false},
+            {text: 'Воздушно-капельным путём, через предметы обихода', correct: true}
+        ]
+    },
+    {
+        question: 'Сколько в среднем длится инкубационный период коронавируса?',
+        answers: [
+            {text: '1-2 дня', correct: false},
+            {text: '5 дней', correct: false},
+            {text: '10 дней', correct: false},
+            {text: '15 дней', correct: true}
+        ]
+    },
+    {
+        question: 'Какие наиболее распространённые симптомы при заражении коронавирусом?',
+        answers: [
+            {text: 'Боль в глазах, изжога, холодный пот, резь в паху', correct: false},
+            {text: 'Насморк, чихание, обильное газовыделение из заднего прохода', correct: false},
+            {text: 'Высокая темература, сухой кашель, одышка, боли в мышцах', correct: true},
+            {text: 'Шелушение кожи, чесотка, зуд в подмышках, жжение во рту', correct: false}
+        ]
+    },
+    {
+        question: 'Что в первую очередь следует делать для профилактики коронавируса в период карантина?',
+        answers: [
+            {text: 'Избегать контактов с людьми, не трогать лицо руками, чаще мыть руки', correct: true},
+            {text: 'Есть больше лука, чеснока и витаминов', correct: false},
+            {text: 'Пользоваться презервативом', correct: false},
+            {text: 'Принимать антибиотики', correct: false}
+        ]
+    },
+    {
+        question: 'Какую болезнь вызывает коронавирус?',
+        answers: [
+            {text: 'Чахотка', correct: false},
+            {text: 'Пневмония', correct: true},
+            {text: 'Нарушение кровообращения конечностей', correct: false},
+            {text: 'Зуд в заднем проходе', correct: false}
+        ]
+    },
+    {
+        question: 'Сколько времени может находится коронавирус на поверхности предметов?',
+        answers: [
+            {text: '2 часа', correct: false},
+            {text: 'до суток', correct: false},
+            {text: 'До 3-х суток', correct: true},
+            {text: 'До двух недель', correct: false}
+        ]
+    },
+    {
+        question: 'От куда взялся коронавирус?',
+        answers: [
+            {text: 'Вероятнее всего он перешёл к человеку от летучих мышей', correct: true},
+            {text: 'Вероятнее всего его создали в лаборатории, чтобы снизить избыточную численность населения', correct: false},
+            {text: 'Вероятнее всего его завезли инопланетяне', correct: false},
+            {text: 'Вероятнее всего он мутировал из вируса Гриппа', correct: false}
         ]
     }
 ]

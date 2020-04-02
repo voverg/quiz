@@ -9,7 +9,10 @@ body {
     font-size: 18px;
     color: #555;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #498ad4;
 }
 
 a {
@@ -21,12 +24,13 @@ a:hover {
 }
 
 .container {
-    position: relative;
     width: 700px;
-    height: 100vh;
+    min-height: 95vh;
     background-color: white;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 h1 {
@@ -38,6 +42,7 @@ h1 {
 .text-center {
     text-align: center;
 }
+
 #question {
     padding: 10px 0 20px;
     font-size: 20px;
@@ -60,7 +65,7 @@ h1 {
     color: white;
     font-size: 18px;
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .btn:hover {
     cursor: pointer;
@@ -83,7 +88,6 @@ h1 {
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     padding: 10px;
