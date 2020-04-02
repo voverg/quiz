@@ -17,7 +17,7 @@ function startGame () {
 
 function setNextQuestion () {
     resetState();
-    showQuestion(questionList[currentQuestion]);
+    showQuestion(questions[currentQuestion]);
 }
 
 function resetState () {
@@ -53,13 +53,13 @@ function selectAnswer (e) {
         setStatusClass(button, button.dataset.correct);
     })
 
-    if (questionList.length > currentQuestion + 1) {
+    if (questions.length > currentQuestion + 1) {
         nextButton.classList.remove('hide');
     } else {
         startButton.innerText = 'Начать заново';
         startButton.classList.remove('hide');
 
-        question.innerHTML = `Кол-во правильных ответов = ${correctAnswers} из ${questionList.length}`;
+        question.innerHTML = `Кол-во правильных ответов = ${correctAnswers} из ${questions.length}`;
     }
 }
 
@@ -82,3 +82,25 @@ nextButton.addEventListener('click', () => {
     currentQuestion++;
     setNextQuestion();
 })
+
+// Data questions
+const questions = [
+    {
+        question: 'What is 2 + 2',
+        answers: [
+            {text: '3', correct: false},
+            {text: '4', correct: true},
+            {text: '7', correct: false},
+            {text: '10', correct: false}
+        ]
+    },
+    {
+        question: 'What is your name?',
+        answers: [
+            {text: 'Cat', correct: false},
+            {text: 'Dog', correct: false},
+            {text: 'Vova', correct: true},
+            {text: 'Rabbit', correct: false}
+        ]
+    }
+]
