@@ -1,4 +1,4 @@
-*, *:before, *:after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #555;
     display: flex;
     justify-content: center;
@@ -22,22 +22,21 @@ a {
     width: 700px;
     height: 100vh;
     background-color: white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 h1 {
     padding: 30px 15px;
-}
-
-#question-container {
-    padding: 30px 0;
+    font-size: 26px;
+    color: #666;
 }
 
 .text-center {
     text-align: center;
 }
 #question {
-    padding: 30px 0;
-    font-size: 18px
+    padding: 10px 0 20px;
 }
 
 .btn-grid {
@@ -85,4 +84,15 @@ h1 {
 }
 .wrong {
     background-color: red;
+}
+
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+
+    .btn {
+        flex-basis: 90%;
+    }
 }
