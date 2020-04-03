@@ -52,6 +52,9 @@ function selectAnswer (e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
+    Array.from(answerButtons.children).forEach(button => {
+        setDisabledElement(button);
+    })
 
     if (questionList.length > currentQuestion + 1) {
         nextButton.classList.remove('hide');
@@ -70,6 +73,10 @@ function setStatusClass (elem, correct) {
     } else {
         elem.classList.add('wrong');
     }
+}
+
+function setDisabledElement (elem) {
+    elem.classList.add('disabled');
 }
 
 function clearStatusClass(elem) {

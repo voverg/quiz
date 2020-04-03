@@ -12,7 +12,7 @@ const questionList = [
         question: '2. Как передаётся коронавирус?',
         answers: [
             {text: 'Половым путём', correct: false},
-            {text: 'Через кровь, порезы ссадины', correct: false},
+            {text: 'Через кровь, порезы, ссадины', correct: false},
             {text: 'Через не свежие продукты', correct: false},
             {text: 'Воздушно-капельным путём, через предметы обихода', correct: true}
         ]
