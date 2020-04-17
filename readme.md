@@ -1,4 +1,4 @@
-# <a name='nav'>Navigation</a>
+# <a name='nav'>Quiz application</a>
 
 - [App description](#description)
 - [Quick start development](#quickstart)
