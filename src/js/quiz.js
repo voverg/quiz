@@ -23,7 +23,7 @@ function setNextQuestion () {
 function resetState () {
     clearStatusClass(document.body);
     nextButton.classList.add('hide');
-    answerButtons.innerHTML = '';
+    answerButtons.innerHTML = null;
 }
 
 function showQuestion (quest) {
