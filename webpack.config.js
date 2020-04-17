@@ -9,12 +9,12 @@ module.exports = {
     // context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        app: ['./src/js/todo.js']
+        app: ['./src/js/app.js']
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './dist/js'),
-        publicPath: './dist'
+        path: path.resolve(__dirname, './docs/js'),
+        publicPath: './docs'
     },
     resolve: {
         extensions: ['.js', '.json'],
@@ -54,19 +54,19 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, './src/img'),
-                to: path.resolve(__dirname, './dist/img')
+                to: path.resolve(__dirname, './docs/img')
             },
             {
                 from: path.resolve(__dirname, './src/css'),
-                to: path.resolve(__dirname, './dist/css')
+                to: path.resolve(__dirname, './docs/css')
             },
             {
                 from: path.resolve(__dirname, './src/index.html'),
-                to: path.resolve(__dirname, './dist/index.html')
+                to: path.resolve(__dirname, './docs/index.html')
             },
             {
                 from: path.resolve(__dirname, './src/fonts'),
-                to: path.resolve(__dirname, './dist/fonts')
+                to: path.resolve(__dirname, './docs/fonts')
             }
         ]),
     ]
