@@ -19,7 +19,7 @@ This ES6 standard project rebuild with webpack and babel to be cross browsers.
 ## <a name='quickstart'>Quick start development</a>
 To quick start you have to:
 
-1. Clone this repository by written `git clone git@github.com:voverg/start-template.git` in your console or terminal
+1. Clone this repository by written `git clone git@github.com:voverg/quiz.git` in your console or terminal
 2. Set up **Node.js** and **npm** (sets up automatically with Node.js). You can download it on official web site <https://nodejs.org/> 
 3. Open the folder with cloned project template in your console or terminal
 4. Write `npm i` in your console and wait for dependences will downloaded
