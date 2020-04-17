@@ -1,26 +1,22 @@
 # <a name='nav'>Navigation</a>
 
-- [Description](#description)
-- [Quick start](#quickstart)
-- [How to use](#howto)
+- [App description](#description)
+- [Quick start development](#quickstart)
+- [How to use this project](#howto)
 ---
 ## <a name='description'>Description</a>
 
-Это простое приложение-викторина, написанное на html, css и чистом javascript. Посмотреть демо версию можно на Github Pages по [этой ссылке](https://voverg.github.io/quiz/ 'Посмотреть тест')
-
 This is a simple quiz app written by html, css and clean javascript. You can see demo version on GitHub Pages [this link](https://voverg.github.io/quiz/ 'Look test demo')
 
-This is a start template for  simple projects written by html, css and clean javascript. This template allows your ES6 project rebuild any javascript format (ES5 for example) to be cross browsers.
+This ES6 standard project rebuild with webpack and babel to be cross browsers.
 
-**Put a picture here**
+![quiz](D:\Programming\Pet_projects\Web-apps\quiz\docs\img\quiz_screenshot.png)
 
 -----
 
-
-
 [Return to navigation](#nav)
 
-## <a name='quickstart'>Quick start</a>
+## <a name='quickstart'>Quick start development</a>
 To quick start you have to:
 
 1. Clone this repository by written `git clone git@github.com:voverg/start-template.git` in your console or terminal
@@ -44,7 +40,7 @@ In order to use this start template for correct building, you should keep this f
   |- readme.md
   |- package.json
   |- webpack.config.js
-  |- /dist
+  |- /docs
   |- /src
     |- index.html
     |- /css
@@ -60,7 +56,7 @@ A little bit about some folders and files in this structure:
 - **readme.md** contains description of the app
 - **package.json** contains an information about project, including dependences and supported browsers
 - **webpack.config.js** contains webpack settings
-- Into **dist** folder there will build the production version of the project (structure will be as the **src** folder)
+- Into **docs** folder there will build the production version of the project (structure will be as the **src** folder). This folder named **docs** for GitHub Pages (GitHub Pages requires to call production folder the same way). 
 - **src** folder contains sources structure of the project (it should be the same to correct build the project)
 - **node_modules** folder will be after `npm i` command in your console and will contain dependences of the project development and production
 
