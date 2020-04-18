@@ -8,6 +8,8 @@
 
 This is a simple quiz app written by html, css and clean javascript. You can see demo version on GitHub Pages [this link](https://voverg.github.io/quiz/ 'Look test demo')
 
+Just answer the questions by making choice between options. If you are right your answer option gets green color else the option gets red color.
+
 This ES6 standard project rebuild with webpack and babel to be cross browsers.
 
 ![quiz](https://github.com/voverg/quiz/blob/master/docs/img/quiz_screenshot.png)
