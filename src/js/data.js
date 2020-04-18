@@ -1,4 +1,4 @@
-const questionList = [
+export const questionList = [
     {
         question: '1. Почему коронавирус так называется?',
         answers: [

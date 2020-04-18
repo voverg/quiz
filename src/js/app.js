@@ -1,4 +1,4 @@
-// import { questionList } from './data';
+import { questionList } from './data';
 // Get html elements
 const statusRightElem = document.querySelector('.right-answer');
 const statusWrongElem = document.querySelector('.wrong-answer');
