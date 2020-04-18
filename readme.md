@@ -10,7 +10,7 @@ This is a simple quiz app written by html, css and clean javascript. You can see
 
 This ES6 standard project rebuild with webpack and babel to be cross browsers.
 
-![quiz](D:\Programming\Pet_projects\Web-apps\quiz\docs\img\quiz_screenshot.png)
+![quiz](https://github.com/voverg/quiz/blob/master/docs/img/quiz_screenshot.png)
 
 -----
 
