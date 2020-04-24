@@ -52,6 +52,7 @@ function selectAnswer (e) {
     setStatusClass(document.body, correct);
 
     if (selectedButton.dataset.correct) {
+        soundClick('./img/right.mp3');
         selectedButton.classList.add('correct');
         Array.from(answerButtons.children).forEach(button => {
             setDisabledElement(button);
@@ -60,6 +61,7 @@ function selectAnswer (e) {
         correctAnswers++;
         statusRightElem.textContent = correctAnswers;
     } else {
+        soundClick('./img/error.mp3');
         selectedButton.classList.add('wrong');
         Array.from(answerButtons.children).forEach(button => {
             if (button.dataset.correct) {
@@ -101,6 +103,13 @@ function setDisabledElement (elem) {
 
 function clearStatusClass(elem) {
     elem.classList.remove('correct', 'wrong');
+}
+
+// Sound when click answer button
+function soundClick(path) {
+    let audio = new Audio();
+    audio.src = path;
+    audio.autoplay = true;
 }
 
 // Event listeners
