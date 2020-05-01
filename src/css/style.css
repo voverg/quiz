@@ -73,6 +73,14 @@ h1 {
     font-weight: bold;
     color: #3270bd;
 }
+.welcome {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #888;
+    font-weight: normal;
+    text-align: left;
+}
 
 .btn-grid {
     display: flex;
